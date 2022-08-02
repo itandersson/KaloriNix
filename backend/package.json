@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Kalori App is a website under development. The website is intended to help people keep track of calorie intake. This project will not be completed. The intention is just to work out on how to communicate with an API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joakim Andersson",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.7"
+  }
+}

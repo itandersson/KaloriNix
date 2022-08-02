@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: my-FrontEnd
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    command: npm start
+
+  api:
+    container_name: my-BackEnd
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - CONNECTIONSTRING=mongodb://root:password@db:27017/livsmedel?authSource=admin
+    command: node app.js
+
+  db:
+    container_name: my-mongoDB
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - KaloriNix_mongodb:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+volumes:
+  KaloriNix_mongodb:
