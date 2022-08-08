@@ -22,4 +22,4 @@ salt: 'number'<br />
 ![sokformular.jpg](images/model/web/sokformular.jpg "Sökformulär")
 ![dagbok.jpg](images/model/web/dagbok.jpg "Dagbok")
 ![livsmedel1.jpg](images/model/web/livsmedel1.jpg "Livsmedel ett")
-![livsmedel2.jpg](images/model/web/Livsmedel2.jpg "Livsmedel två")
+![livsmedel2.jpg](images/model/web/livsmedel2.jpg "Livsmedel två")
